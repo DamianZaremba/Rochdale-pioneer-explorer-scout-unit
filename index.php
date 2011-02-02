@@ -26,7 +26,7 @@ function buildAlertData($group){
 }
 			
 $page->add_js('
-<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAAArKyS_yRXmMvmOZ3CeYtMhRqqw9hvBt0lILS2raXBsosUP523hQy5ZRqt4kR9noExiaONzeaEQC1Gw" type="text/javascript"></script>
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAAArKyS_yRXmMvmOZ3CeYtMhSGsTQve4q9e2831a6t9yQhtGZhwRTDDKnRHfTl_U1dkJXD7Yc_xtmzew" type="text/javascript"></script>
 <script type="text/javascript">
 	<!--
 	var group_data = '.json_encode($groups_array).';
