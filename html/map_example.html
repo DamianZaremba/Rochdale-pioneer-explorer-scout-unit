@@ -1,0 +1,61 @@
+<html>
+<head>
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAArKyS_yRXmMvmOZ3CeYtMhRqqw9hvBt0lILS2raXBsosUP523hQy5ZRqt4kR9noExiaONzeaEQC1Gw&sensor=false" type="text/javascript"></script>
+<script type="text/javascript">
+	function mapLoad() {
+		if (GBrowserIsCompatible()) {
+			var map = new GMap2(document.getElementById("map_canvas"));
+			map.setMapType(G_NORMAL_MAP);
+			map.setCenter(new GLatLng(53.620412,-2.167912), 12);
+            
+			function createMarker(point, html) {
+				var marker = new GMarker(point, mapIconOptions);
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				return marker;
+			}
+
+			// Controls
+			map.addControl(new GMapTypeControl());
+			map.addControl(new GLargeMapControl());
+		
+			// Icon
+			var mapIcon = new GIcon();
+			mapIcon.image = "style/images/map/icon.png";
+			mapIcon.iconSize = new GSize(40, 40);
+			mapIcon.iconAnchor = new GPoint(0, 20);
+			mapIcon.infoWindowAnchor = new GPoint(5, 1);
+			mapIconOptions = { icon:mapIcon };
+			
+			// Wardle
+			var marker = createMarker(new GLatLng(53.647182,-2.134953), '<div style="width:240px"><h1>Wardle</h1><p>Site: <a href="#" title="">http://</a></p><p>Email: <a href="mailto:" title="">@</a></p><p>Address: </p><\/div>');
+			map.addOverlay(marker);
+			
+			// Dernly
+			var marker = createMarker(new GLatLng(53.639346,-2.117357), '<div style="width:240px"><h1>Dernly</h1><p>Site: <a href="#" title="">http://</a></p><p>Email: <a href="mailto:" title="">@</a></p><p>Address: </p><\/div>');
+			map.addOverlay(marker);
+			
+			// Norden
+			var marker = createMarker(new GLatLng(53.625808,-2.216921), '<div style="width:240px"><h1>Norden</h1><p>Site: <a href="#" title="">http://</a></p><p>Email: <a href="mailto:" title="">@</a></p><p>Address: </p><\/div>');
+			map.addOverlay(marker);
+			
+			// District
+			var marker = createMarker(new GLatLng(53.627182,-2.153835), '<div style="width:240px"><h1>District HQ</h1><p>Site: <a href="#" title="">http://</a></p><p>Email: <a href="mailto:" title="">@</a></p><p>Address: </p><\/div>');
+			map.addOverlay(marker);
+			
+			// Spotland
+			var marker = createMarker(new GLatLng(53.6208,-2.172520), '<div style="width:240px"><h1>Spotland</h1><p>Site: <a href="#" title="">http://</a></p><p>Email: <a href="mailto:" title="">@</a></p><p>Address: </p><\/div>');
+			map.addOverlay(marker);
+
+			// Balderstone Sudden
+			var marker = createMarker(new GLatLng(53.601037,-2.176752), '<div style="width:240px"><h1>Balderstone Sudden</h1><p>Site: <a href="#" title="">http://</a></p><p>Email: <a href="mailto:" title="">@</a></p><p>Address: </p><\/div>');
+			map.addOverlay(marker);
+		}
+	}
+</script>
+</head>
+<body onload="mapLoad()" onunload="GUnload()">
+<div id="map_canvas" style="width:728px; height:566px"></div>
+</body>
+</html>

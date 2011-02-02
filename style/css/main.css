@@ -1,0 +1,162 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Calibri", sans-serif;
+	font-size: 1em;
+}
+
+body {
+	background-image: url('../images/main/background.gif');
+	color: #000000;
+}
+
+h2 {
+	font-size: 1.58em;
+	line-height: 1em;
+	color: #000;
+	border-bottom: 1px solid #000;
+	margin-top: 3px;
+}
+
+h3 {
+	font-size: 1em;
+	padding: 5px;
+}
+
+h4 {
+	font-size: 1em;
+	padding: 5px;
+}
+
+p {
+    padding: 2px;
+}
+
+#header {
+	clear: both;
+	background-image: url('../images/main/header.gif');
+	background-repeat: no-repeat;
+
+	height: 156px;
+	width: 852px;
+	margin: 0 auto;
+}
+
+#nav {
+	clear: both;
+	background-image: url('../images/main/nav.gif');
+	background-repeat: no-repeat;
+
+	height: 48px;
+	width: 852px;
+	margin: 0 auto;
+
+	text-align: center;
+}
+
+#main {
+	clear: both;
+	background-image: url('../images/main/main_bg.gif');
+	background-repeat: repeat-y;
+
+	width: 852px;
+	margin: 0 auto;
+}
+
+#footer {
+	clear: both;
+	background-image: url('../images/main/footer.gif');
+	background-repeat: no-repeat;
+
+	height: 90px;
+	width: 852px;
+	margin: 0 auto;
+}
+
+#footer_necker{
+	text-align: center;
+}
+
+#footer_copyright {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+	width: 852px;
+}
+
+#nav ul {
+	padding-top: 13px;
+	width: 852px;
+	list-style-type: none;
+}
+
+#nav ul li {
+	display: inline;
+	padding-left: 15px;
+	padding-right: 15px;
+	
+	margin-left: 2px;
+	margin-right: 2px;
+	
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#nav ul li a{
+	color: #003366;
+}
+
+#nav ul li:hover{
+	background-color: #999966;
+	/*-moz-border-radius-bottomleft: 15px;
+	-moz-border-radius-bottomright: 15px;*/
+}
+
+#nav ul li a:hover{
+	color: #006699;
+}
+
+#content {
+	padding: 5px;
+	text-align: left;
+}
+
+#content * a{
+	color: #003366;
+}
+
+#footer * a{
+	color: #999966;
+}
+
+#gallery_table {
+	width: 100%;
+}
+
+#gallery_table td{
+	text-align: center;
+}
+
+#map_canvas {
+	width: 500px;
+	height: 300px;
+	
+	border-color: #484848;
+	border-style: solid;
+	border-width: 0.5px;
+}
+
+.gallery img {
+	max-height: 200px;
+	max-width: 500px;
+	border: none;
+}
+
+.hidden {
+	display: none;
+}
+
+.smallinfo {
+	font-style: italic;
+	font-size: 80%;
+}
